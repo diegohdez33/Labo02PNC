@@ -7,14 +7,14 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "project_status")
-public class ProjectStatus {
+@NoArgsConstructor
+@Table(name = "area_category")
+public class AreaCategory {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer idProjectStatus;
+    private Integer idAreaCategory;
 
     @Column
     private String name;
