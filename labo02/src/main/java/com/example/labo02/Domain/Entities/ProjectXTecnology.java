@@ -14,7 +14,7 @@ public class ProjectXTecnology {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer idProject;
+    private Integer idProjectXTecnology;
 
     @ManyToOne
     @JoinColumn(name = "id_tecnology", nullable = false, foreignKey = @ForeignKey(name = "fk_project_tecnology"))
