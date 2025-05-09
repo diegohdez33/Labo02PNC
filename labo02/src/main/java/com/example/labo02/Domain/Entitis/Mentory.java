@@ -1,4 +1,4 @@
-package com.example.labo02.Entitis;
+package com.example.labo02.Domain.Entitis;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -25,7 +25,7 @@ public class Mentory {
     @Column
     private String description;
 
-    //Dos llaves foraneas hacia la misma tabla(employee), pense que iba a explotar
+    //Dos llaves foraneas hacia la misma tabla(employee)
     @ManyToOne
     @JoinColumn(name = "IdMentor", nullable = false, foreignKey = @ForeignKey(name = "fk_Mentory_Employee_IdMentor"))
     private Employee mentor;

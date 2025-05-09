@@ -1,4 +1,4 @@
-package com.example.labo02.Entitis;
+package com.example.labo02.Domain.Entitis;
 
 
 import jakarta.persistence.*;

@@ -1,10 +1,9 @@
-package com.example.labo02.Entitis;
+package com.example.labo02.Domain.Entitis;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.CollectionId;
 
 import java.util.Date;
 
