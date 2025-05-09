@@ -12,7 +12,7 @@ public interface iAreaRepository extends iGenericRepository<Area, Integer> {
 
     //Hibrida
     @Query("SELECT a FROM Area a WHERE a.idArea = :id")
-    public Area findByNameHib(@Param("id_area") Integer id);
+    public Area findByNameHib(@Param("idArea") Integer id);
 
     //Nativa
     @Query(nativeQuery = true, value = "SELECT * FROM area WHERE name = :name")
