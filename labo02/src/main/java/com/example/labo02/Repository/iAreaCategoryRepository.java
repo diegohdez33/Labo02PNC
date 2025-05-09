@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 @Transactional
-public interface iAreaCategoryRepository {
+public interface iAreaCategoryRepository extends iGenericRepository<AreaCategory, Integer>{
     //JPA
     public AreaCategory findByName(String name);
 
