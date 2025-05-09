@@ -1,37 +1,31 @@
 package com.example.labo02.Domain.Entities;
 
-import com.fasterxml.jackson.databind.DatabindException;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.util.Date;
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Table
-
-public class Training {
-
+public class Contact {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer IdTraining;
+    private Integer id_contact;
 
     @Column
-    private String topicTitle;
+    private String firtName;
 
     @Column
-    private Date date;
+    private String lastName;
 
     @Column
-    private int time;
+    private String email;
 
-    @Column
-    private String description;
-
+    @ManyToOne
+    @JoinColumn(name = "idContactType", nullable = false, foreignKey = @ForeignKey(name = "fk_contact_ContactType"))
+    private ContactType contactType;
 }
-

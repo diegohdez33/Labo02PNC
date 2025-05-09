@@ -6,22 +6,18 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.UUID;
-
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Table
-public class Department {
+
+public class ContactType {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private UUID IdDepartment;
-    @Column
-    private String departmentName;
-    @Column
-    private String departmentDescription;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer idContactType;
 
+    @Column
+    private String name;
 }
-

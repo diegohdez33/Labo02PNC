@@ -15,7 +15,7 @@ public class AssessmentsType {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int IdAssessmentsType;
+    private Integer IdAssessmentsType;
 
     @Column
     private String name;

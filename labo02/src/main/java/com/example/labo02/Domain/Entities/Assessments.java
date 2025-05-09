@@ -15,10 +15,10 @@ public class Assessments {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int IdAssessments;
+    private Integer IdAssessments;
 
     @Column
-    private String quanlification;
+    private Float quanlification;
 
     @Column
     private String coment;

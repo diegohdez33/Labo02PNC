@@ -15,16 +15,16 @@ public class EmployeeXTraining {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int IdEmpleeXTraining;
+    private Integer IdEmpleeXTraining;
 
     @ManyToOne
     @JoinColumn(name = "IdTraining", nullable = false, foreignKey = @ForeignKey(name = "fk_EmpleeXTraining_Training"))
     private Training Training;
 
-/*
+
     @ManyToOne
     @JoinColumn(name = "id_employee", nullable = false, foreignKey = @ForeignKey(name = "fk_EmpleeXTraining_Emplee"))
     private Employee Employee;
-    */
+
 
 }
