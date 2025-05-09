@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 public class position {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.UUID)
     private int IdPosition;
     @Column
     private String positionName;

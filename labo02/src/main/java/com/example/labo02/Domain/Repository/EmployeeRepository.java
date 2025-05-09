@@ -1,4 +1,4 @@
 package com.example.labo02.Domain.Repository;
 
-public class EmployeeRepository {
+public interface EmployeeRepository {
 }

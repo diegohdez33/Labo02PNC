@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 public class Department {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.UUID)
     private int IdDepartment;
     @Column
     private String departmentName;

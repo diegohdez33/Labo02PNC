@@ -16,7 +16,7 @@ import java.util.Date;
 public class Mentory {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.UUID)
     private int IdMentory;
 
     @Column

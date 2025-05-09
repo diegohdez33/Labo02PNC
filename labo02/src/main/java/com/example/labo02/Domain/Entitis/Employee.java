@@ -16,7 +16,7 @@ import java.util.Date;
 public class Employee {
 
     @Id
-    @GeneratedValue (strategy = GenerationType.AUTO)
+    @GeneratedValue (strategy = GenerationType.UUID)
     private int id_employee;
 
     @Column

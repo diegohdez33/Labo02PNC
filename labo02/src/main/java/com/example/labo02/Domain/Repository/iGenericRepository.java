@@ -1,4 +1,4 @@
 package com.example.labo02.Domain.Repository;
 
-public interface positionRepository {
+public interface iGenericRepository<T, T1> {
 }
