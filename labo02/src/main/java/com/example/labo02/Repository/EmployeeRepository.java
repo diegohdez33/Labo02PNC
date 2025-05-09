@@ -11,7 +11,7 @@ import java.util.Date;
 public interface EmployeeRepository extends iGenericRepository<Employee, Integer> {
 
     //JPA
-    public Employee findByFirstName(String firstName);
+    public Employee findByIdEmployee(Integer idEmployee);
 
     //Hibrida
     @Query("SELECT e FROM Employee e WHERE e.entryDate = :entryDate")
@@ -19,6 +19,6 @@ public interface EmployeeRepository extends iGenericRepository<Employee, Integer
 
     //Nativa
     @Query(nativeQuery = true, value = "SELECT * FROM Employee WHERE name = :name")
-    public Employee findByFirtNameNative(@Param("firtName") String firtName);
+    public Employee findByFirstNameNative(@Param("firstName") String firtName);
 
 }

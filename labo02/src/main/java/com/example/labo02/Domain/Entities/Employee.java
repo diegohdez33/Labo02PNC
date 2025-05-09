@@ -18,10 +18,7 @@ public class Employee {
 
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
-    private Integer id_employee;
-
-    @Column
-    private String firstName;
+    private Integer idEmployee;
 
     @Column
     private Date entryDate;
