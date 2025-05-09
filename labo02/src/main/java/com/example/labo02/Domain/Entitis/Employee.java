@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
+import java.util.UUID;
 
 @Entity
 @Data
@@ -16,8 +17,8 @@ import java.util.Date;
 public class Employee {
 
     @Id
-    @GeneratedValue (strategy = GenerationType.UUID)
-    private int id_employee;
+    @GeneratedValue (strategy = GenerationType.AUTO)
+    private Integer id_employee;
 
     @Column
     private Date entryDate;

@@ -6,6 +6,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.UUID;
+
 @Entity
 @Data
 @NoArgsConstructor
@@ -15,7 +17,7 @@ public class Department {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private int IdDepartment;
+    private UUID IdDepartment;
     @Column
     private String departmentName;
     @Column

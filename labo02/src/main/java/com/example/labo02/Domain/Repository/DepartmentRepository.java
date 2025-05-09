@@ -13,7 +13,7 @@ public interface DepartmentRepository extends iGenericRepository<Department, UUI
 
     //Hibrida
     @Query("SELECT d FROM Department d WHERE d.departmentName = :departmentName")
-    public Department findByIndustry(@Param("industry") String industry);
+    public Department findBydepartmentName(@Param("departmentName") String departmentName);
 
     //Nativa
     @Query(nativeQuery = true, value = "SELECT * FROM Department WHERE name = :departmentName")
