@@ -21,6 +21,9 @@ public class Employee {
     private Integer id_employee;
 
     @Column
+    private String firstName;
+
+    @Column
     private Date entryDate;
 
     @ManyToOne

@@ -29,11 +29,10 @@ public class EmployeeXProject {
     @JoinColumn(name = "id_project", nullable = false, foreignKey = @ForeignKey(name = "fk_project"))
     private Project project;
 
-    /*
+
     @ManyToOne
     @JoinColumn(name = "id_employee", nullable = false, foreignKey = @ForeignKey(name = "fk_employee"))
     private Employee employee;
-    */
 
 
 }

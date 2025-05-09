@@ -25,10 +25,8 @@ public class Customers {
     @Column
     private String industry;
 
-    /*
-    Fk con la tabla contacto
     @OneToOne
     @JoinColumn(name = "id_contact", nullable = false, foreignKey = @ForeignKey(name = "fk_contact"))
     private Contact contact;
-     */
+
 }

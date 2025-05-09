@@ -9,7 +9,7 @@ import org.springframework.data.repository.query.Param;
 public interface iProjectXTecnologyRepository extends iGenericRepository<ProjectXTecnology, Integer> {
 
     //JPA
-    public ProjectXTecnology findByIdTechnology(Integer idTechnology);
+    public ProjectXTecnology findByIdProjectXTecnology(Integer idProjectXTecnology);
 
     //Hibrida
     @Query("SELECT p FROM ProjectXTecnology p WHERE p.idProjectXTecnology = :id")

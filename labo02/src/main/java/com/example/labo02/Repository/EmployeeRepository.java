@@ -1,22 +1,24 @@
-package com.example.labo02.Domain.Repository;
+package com.example.labo02.Repository;
 
 import com.example.labo02.Domain.Entities.Employee;
+import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import java.util.Date;
 
+@Transactional
 public interface EmployeeRepository extends iGenericRepository<Employee, Integer> {
 
     //JPA
-    public Employee findByfirtName(String firtName);
+    public Employee findByFirstName(String firstName);
 
     //Hibrida
     @Query("SELECT e FROM Employee e WHERE e.entryDate = :entryDate")
-    public Employee findByentryDate(@Param("entryDate") Date entryDate);
+    public Employee findByEntryDate(@Param("entryDate") Date entryDate);
 
     //Nativa
     @Query(nativeQuery = true, value = "SELECT * FROM Employee WHERE name = :name")
-    public Employee findByfirtNameNative(@Param("firtName") String firtName);
+    public Employee findByFirtNameNative(@Param("firtName") String firtName);
 
 }
