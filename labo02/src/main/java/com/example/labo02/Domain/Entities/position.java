@@ -1,4 +1,4 @@
-package com.example.labo02.Domain.Entitis;
+package com.example.labo02.Domain.Entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

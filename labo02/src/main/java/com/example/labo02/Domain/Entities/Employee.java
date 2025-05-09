@@ -1,4 +1,4 @@
-package com.example.labo02.Domain.Entitis;
+package com.example.labo02.Domain.Entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -27,10 +27,10 @@ public class Employee {
     @JoinColumn(name = "IdPosition", nullable = false, foreignKey = @ForeignKey(name = "fk_employee_position"))
     private position position;
 
-    
+  /*
     @OneToOne
     @JoinColumn(name = "id_contact", nullable = false, foreignKey = @ForeignKey(name = "fk_position_Department"))
     private Contact Contact;
-
+*/
 
 }

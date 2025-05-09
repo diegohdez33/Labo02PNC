@@ -1,6 +1,6 @@
 package com.example.labo02.Domain.Repository;
 
-import com.example.labo02.Domain.Entitis.Department;
+import com.example.labo02.Domain.Entities.Department;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
